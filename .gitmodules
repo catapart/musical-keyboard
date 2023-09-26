@@ -1,0 +1,3 @@
+[submodule "magnit-synth"]
+	path = magnit-synth
+	url = https://github.com/catapart/magnit-synth.git
