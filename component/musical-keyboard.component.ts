@@ -1,4 +1,4 @@
-import { MagnitSynth } from '../libs/index.mjs';
+import { MagnitSynth } from 'magnit-synth';
 import { default as style } from './musical-keyboard.component.css';
 import { default as html } from './musical-keyboard.component.html';
 
