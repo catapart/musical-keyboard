@@ -1,0 +1,188 @@
+<header>
+    <div class="main">
+        <header>
+            <span class="title">Simphony</span>
+            <span class="delimiter">-</span>
+            <select class="key-count">
+                <option value="25">25</option>
+                <option value="32">32</option>
+                <option value="49">49</option>
+                <option value="61">61</option>
+                <option value="88" selected>88</option>
+            </select>
+        </header>
+        <button type="button settings">
+            <span class="icon">&#128736;</span>
+            <span class="label">Settings</span>
+        </button>
+        <div class="controls">
+            <span class="selection">
+                <select class="instruments"></select>
+                <span class="spinner"></span>
+            </span>
+            <progress min="0" max="100" value="0"></progress>
+        </div>
+    </div>
+    <fieldset class="pads">
+        <legend>
+            <span class="controls">
+                <span class="selection">
+                    <select class="instruments"></select>
+                    <span class="spinner"></span>
+                </span>
+                <progress min="0" max="100" value="0"></progress>
+            </span>
+        </legend>
+    </fieldset>
+    <fieldset class="midi-state">
+        <legend>MIDI</legend>
+        <button type="button" class="request-midi">
+            <div class="toggle-container">
+                <div class="toggle-thumb"></div>
+            </div>
+        </button>
+    </fieldset>
+</header>
+<div class="keybed"></div>
+<dialog class="settings">
+    <header>
+        <span class="title">
+            <span class="icon">&#128736;</span>
+            <span class="label">Settings</span>
+        </span>
+        <span class="form-actions">
+            <button class="close">&times;</button>
+        </span>
+    </header>
+    <div class="content">
+        <fieldset class="manage">
+            <legend>Manage</legend>
+            <button class="stop-all">
+                <span class="icon">&FilledSmallSquare;</span>
+                <span class="label">Stop All Audio</span>
+            </button>
+        </fieldset>
+        <fieldset class="theme">
+            <legend>Theme</legend>
+            <label class="field">
+                <span class="label">Keyboard Theme</span>
+                <select class="value" name="color-theme">
+                    <option value="concert">Concert</option>
+                    <option value="pearl">Pearl</option>
+                </select>
+            </label>
+            <label class="field">
+                <span class="label">Key Colors</span>
+                <select class="value" name="key-colors">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="cache">
+            <legend>Cache</legend>
+            <div class="column">
+                <div class="status">
+                    <div class="disk-space">
+                        <span class="label">Disk Space</span>
+                        <span class="value">0</span>
+                        <span class="unit">MB</span>
+                    </div>
+                    <button type="button" class="clear">Clear</button>
+                </div>
+                <label class="field">
+                    <span class="label">Grand Piano Velocities</span>
+                    <select class="value" name="velocities"></select>
+                </label>
+            </div>
+            <div class="column">
+                <header>Files</header>
+                <ul class="files"></ul>
+            </div>
+        </fieldset>
+        <fieldset class="pad-mapping">
+            <legend>Pad Mapping</legend>
+            <div class="pad-selection">
+                <button title="Pad One" class="pad" data-pad-index="1"></button>
+                <button title="Pad Two" class="pad" data-pad-index="2"></button>
+                <button title="Pad Three" class="pad" data-pad-index="3"></button>
+                <button title="Pad Four" class="pad" data-pad-index="4"></button>
+                <button title="Pad Five" class="pad" data-pad-index="5"></button>
+                <button title="Pad Six" class="pad" data-pad-index="6"></button>
+                <button title="Pad Seven" class="pad" data-pad-index="7"></button>
+                <button title="Pad Eight" class="pad" data-pad-index="8"></button>
+                <button title="Pad Nine" class="pad" data-pad-index="9"></button>
+                <button title="Pad Ten" class="pad" data-pad-index="10"></button>
+            </div>
+            <div class="properties">
+                <header>Properties</header>
+                <form>
+                    <label class="field">
+                        <span class="label">Midi Value</span>
+                        <input type="text" name="midi-value" class="value" />
+                        <button type="button" class="listen-for-input" title="Record MIDI value from input">&ofcir;</button>
+                    </label>
+                    <label class="field">
+                        <span class="label">Note</span>
+                        <select class="value" name="note"></select>
+                    </label>
+                    <label class="field">
+                        <span class="label">Frequency</span>
+                        <input type="text" name="frequency" class="value" disabled />
+                    </label>
+                </form>
+            </div>
+        </fieldset>
+        <fieldset class="credit">
+            <legend>Credit</legend>
+            <div class="column guides">
+                <header>Guides</header>
+                <ul class="items">
+                    <li class="item">
+                        <a href="https://www.youtube.com/watch?v=KRm_GICiPIQ">Music and Coding</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://blog.logrocket.com/exploring-web-audio-api-web-midi-api/">LogRocket</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column libraries">
+                <header>Libraries</header>
+                <ul class="items">
+                    <li class="item">
+                        <a href="https://archive.org/details/SalamanderGrandPianoV3">Salamander Grand Piano Samples</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://vis.versilstudios.com/vsco-community.html" title="Versilian Studios Chamber Orchestra: Community Edition">VSCO: CE Samples</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.indiedrums.com/2012/10/10/free-drums-samples-rock-kit/">Indie Drums: Rock Kit</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.indiedrums.com/2015/10/10/slingerland-kit/">Indie Drums: Slingerland Kit</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column reference-projects">
+                <header>Refrenced Projects</header>
+                <ul class="items">
+                    <li class="item">
+                        <a href="https://midiano.com/">Midiano</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://tonejs.github.io/">ToneJs</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/tambien/Piano">ToneJs Piano</a>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="support">
+            <legend>Support</legend>
+        </fieldset>
+    </div>
+    <div class="actions">
+        <button class="ok">&checkmark;</button>
+    </div>
+</dialog>
