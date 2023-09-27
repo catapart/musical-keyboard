@@ -25,7 +25,7 @@ declare namespace MagnitSynth {
         octave: number;
         triggerMethod: 'pointer' | 'midi' | 'glyphentry';
         velocity: number;
-        playbackTimeout?: number;
+        playbackTimeout?: NodeJS.Timeout;
         get mappingName(): string;
         constructor(name: string, frequency: number, octave: number);
         static fromMidiInput(data: any): void;
